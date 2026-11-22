@@ -1,0 +1,154 @@
+export const metadata = {
+  title: "Co musi mieć dobra strona restauracji (checklista)",
+  seoTitle: "Co musi mieć strona restauracji — checklista",
+  description:
+    "Menu jako tekst, godziny, mapa, rezerwacja, zamówienia, zdjęcia i opinie. Checklista dla właścicieli restauracji, barów i kebabów: co powinno być na stronie, żeby gość zadzwonił lub zarezerwował stolik.",
+  date: "2026-09-02",
+  readingTime: "6 min",
+  tags: ["Restauracje", "Checklista", "Strona firmowa"],
+};
+
+Kiedy gość szuka miejsca na obiad, nie czyta. Skanuje. W kilka sekund sprawdza, czy lokal jest otwarty, co jest w menu, ile to kosztuje i jak się tam dostać. Jeśli którejś z tych informacji brakuje albo trzeba jej szukać, wybiera następny lokal z listy.
+
+Strona restauracji nie musi być wyszukana. Musi odpowiadać na te pytania szybko i czytelnie, szczególnie na telefonie, bo tam gość będzie jej szukał najczęściej. Poniżej zebrałem to, co sprawdzam przy każdej stronie lokalu gastronomicznego, razem z przykładami z moich realizacji.
+
+## Najpierw cel strony
+
+Zanim przejdziesz przez listę, zdecyduj, co ma zrobić gość po wejściu na stronę. Zwykle to jedno z trzech:
+
+1. **Zadzwonić i zamówić** (kebab, pizzeria, bar na wynos).
+2. **Zarezerwować stolik** (restauracja, lokal z wnętrzem, które sprzedaje klimat).
+3. **Zapytać o imprezę** (komunie, urodziny, spotkania firmowe).
+
+Ten cel powinien być widoczny w pierwszym ekranie jako jeden wyraźny przycisk. Resztę strony budujesz wokół niego. Dobrze to widać w projekcie [Kebab Nazar](/realizacje/kebab-nazar), gdzie najważniejszy jest przycisk „Zadzwoń i zamów”, a w [Restauracji Zacisze](/realizacje/zacisze), gdzie najważniejsza jest rezerwacja stolika.
+
+## Checklista: informacje podstawowe
+
+<Checklist
+  title="Pierwszy ekran i dane lokalu"
+  items={[
+    { title: "Nazwa i rodzaj lokalu", text: "od razu widać, czy to kebab, pizzeria, restauracja czy bar" },
+    { title: "Numer telefonu klikany na telefonie", text: "jedno dotknięcie i dzwonisz" },
+    { title: "Godziny otwarcia", text: "także święta, weekendy i godziny kuchni, jeśli różnią się od godzin lokalu" },
+    { title: "Adres i mapa", text: "z informacją o parkingu lub dojeździe komunikacją" },
+    { title: "Jeden główny przycisk", text: "zamów, zarezerwuj albo zapytaj, zależnie od celu strony" },
+  ]}
+/>
+
+## Menu: serce strony
+
+Menu to najczęściej odwiedzana podstrona każdego lokalu. Dlatego warto zrobić je dobrze.
+
+<Checklist
+  title="Menu"
+  items={[
+    { title: "Menu jako tekst, nie PDF ani zdjęcie", text: "na telefonie czyta się je bez powiększania, a Google może je zindeksować" },
+    { title: "Ceny przy każdej pozycji", text: "gość nie lubi pytać o cenę i nie lubi niespodzianek" },
+    { title: "Podział na kategorie", text: "przystawki, dania główne, desery, napoje" },
+    { title: "Opisy składników", text: "krótko, konkretnie, bez przesady" },
+    { title: "Informacja o alergenach", text: "to coś, co lokale gastronomiczne i tak muszą udostępniać gościom, więc lepiej mieć to uporządkowane" },
+    { title: "Dania polecane i hity", text: "ułatwiają wybór osobom, które nie wiedzą, co zamówić" },
+    { title: "Aktualność", text: "ceny i dania takie same jak na miejscu" },
+  ]}
+/>
+
+> Menu w PDF to jak karta dań przyklejona do szyby z odległości trzech metrów. Można, ale po co męczyć gościa.
+
+Przykładem pełnego menu z podziałem na kategorie jest strona lokalu [Kącik Smaku](/realizacje/kacik-smaku), a przykładem klarownej sekcji z sosami i dodatkami [Kebab Nazar](/realizacje/kebab-nazar).
+
+## Rezerwacje i zamówienia
+
+<Checklist
+  title="Jak gość ma Cię zamówić lub zarezerwować"
+  items={[
+    { title: "Rezerwacja stolika", text: "formularz z datą, godziną i liczbą osób albo przycisk telefonu, bez zakładania konta" },
+    { title: "Zamówienie telefoniczne", text: "przycisk „zadzwoń i zamów” w widocznym miejscu, zwłaszcza na telefonie" },
+    { title: "Informacja o dowozie", text: "obszar dostawy, minimalna wartość zamówienia i czas dostawy, jeśli dowozisz" },
+    { title: "Jasne zasady", text: "do kiedy rezerwacja, co z odwołaniem, jak z dużymi grupami" },
+    { title: "Potwierdzenie", text: "gość powinien wiedzieć, że zapytanie dotarło" },
+  ]}
+/>
+
+Pamiętaj o jednym: **telefon dzwoni najczęściej wtedy, gdy kuchnia jest najbardziej zajęta.** Dlatego przy większym ruchu warto, żeby gość mógł zostawić zapytanie przez formularz i dostać odpowiedź później. Zamawianie online z płatnością to osobny, większy projekt, który ma sens, gdy zamówień jest naprawdę dużo. Przy małym lokalu zwykle wystarczy telefon i formularz.
+
+## Zdjęcia i klimat
+
+Ludzie jedzą oczami. Zdjęcia dań i wnętrza budują apetyt i decydują o wyborze lokalu.
+
+<Checklist
+  title="Zdjęcia i atmosfera"
+  items={[
+    { title: "Własne zdjęcia dań", text: "ostre, robione przy dziennym świetle, najlepiej kilka sztuk, a nie jedno" },
+    { title: "Zdjęcia wnętrza i wejścia", text: "gość chce wiedzieć, jak wygląda miejsce, zanim do niego trafi" },
+    { title: "Zdjęcia zespołu lub kuchni", text: "dodają lokalowi twarz" },
+    { title: "Brak zdjęć ze stocka", text: "gość rozpozna, że to nie Twoje danie" },
+    { title: "Lekkie pliki", text: "zdjęcia powinny być przygotowane tak, żeby strona nie ładowała się wolno" },
+  ]}
+/>
+
+## Zaufanie: opinie i Profil Firmy w Google
+
+<Checklist
+  title="Opinie i widoczność"
+  items={[
+    { title: "Opinie gości na stronie", text: "kilka prawdziwych, z imieniem lub pseudonimem" },
+    { title: "Uzupełniony Profil Firmy w Google", text: "te same godziny, telefon i adres co na stronie" },
+    { title: "Odpowiadanie na opinie", text: "spokojnie i konkretnie, także na te negatywne" },
+    { title: "Link do Facebooka lub Instagrama", text: "jeśli prowadzisz aktywny profil, który uzupełnia stronę" },
+    { title: "Prośba o opinię", text: "kod QR przy kasie albo na rachunku" },
+  ]}
+/>
+
+Jeśli chcesz zrozumieć, jak to działa w praktyce, opisałem to szczegółowo w artykule [jak zdobywać klientów z Google w swoim mieście](/blog/klienci-z-google-w-swoim-miescie). Dla lokalu gastronomicznego wizytówka w Mapach to często pierwsze, co zobaczy gość.
+
+## Imprezy i oferta specjalna
+
+Jeśli przyjmujesz zamówienia na imprezy, komunie, catering czy spotkania firmowe, zrób dla nich osobną sekcję lub podstronę.
+
+<Checklist
+  title="Imprezy okolicznościowe"
+  items={[
+    { title: "Rodzaje imprez, które obsługujesz", text: "wesela, komunie, urodziny, spotkania firmowe" },
+    { title: "Pojemność sali", text: "ile osób i w jakich aranżacjach" },
+    { title: "Przykładowe menu lub pakiety", text: "z cenami „od” lub informacją, od czego cena zależy" },
+    { title: "Formularz zapytania", text: "data, liczba osób, rodzaj okazji" },
+  ]}
+/>
+
+## Techniczne minimum
+
+To rzeczy, których gość nie zobaczy, ale poczuje.
+
+<Checklist
+  title="Szybkość i jakość"
+  items={[
+    { title: "Strona ładuje się szybko na telefonie", text: "gość często szuka lokalu na ulicy, przy słabszym zasięgu" },
+    { title: "Czytelny tekst bez powiększania", text: "duże, kontrastowe litery" },
+    { title: "Przyciski wygodne dla kciuka", text: "łatwe do trafienia na ekranie telefonu" },
+    { title: "Szyfrowanie HTTPS", text: "kłódka przy adresie" },
+    { title: "Polityka prywatności i cookies", text: "jeśli używasz analityki lub formularzy" },
+    { title: "Aktualność", text: "stara informacja na stronie jest gorsza niż jej brak" },
+  ]}
+/>
+
+Szybkość jest tu szczególnie ważna. Jak ją sprawdzić w dwie minuty, opisuję w artykule [wolna strona kosztuje Cię klientów](/blog/wolna-strona-kosztuje-klientow).
+
+## Czego unikać
+
+- **Intro z animacją**, na które trzeba czekać, zanim zobaczysz menu.
+- **Muzyki i filmów odtwarzanych automatycznie.** Gość może być w pracy albo w autobusie.
+- **Zbyt wielu zakładek.** Wystarczy: menu, galeria, kontakt, rezerwacja.
+- **Ogólników w rodzaju „pyszne jedzenie w przyjaznej atmosferze”.** Napisz, co wyróżnia Twój lokal.
+- **Nieaktualnych informacji.** Gość, który przyjedzie pod zamknięte drzwi, nie wróci i może zostawić opinię.
+
+## Ile kosztuje strona restauracji
+
+Prosty lokal z jedną stroną, menu i mapą to [landing page](/oferta/landing-page) od **500 zł**. Pełna strona z kilkoma podstronami, galerią i rezerwacją mieści się w [stronie firmowej](/oferta/strona-firmowa) od **1500 zł**. Własny system zamówień online z płatnością to większy projekt, który wyceniam indywidualnie. Wycenę dostajesz w 24 godziny, a o tym, od czego zależy cena, piszę w artykule [ile kosztuje strona internetowa](/blog/ile-kosztuje-strona-internetowa).
+
+Jeśli chcesz zobaczyć, jak mogłaby wyglądać strona Twojego lokalu, na stronie [dla restauracji](/branze/restauracje) znajdziesz dodatkowe informacje i realizacje. Możesz też od razu [zobaczyć podgląd swojej strony](/twoja-strona?b=restauracje): wystarczy wpisać nazwę lokalu i miasto.
+
+<Cta title="Chcesz stronę dla swojego lokalu?" href="/wycena" label="Wyceń stronę restauracji">
+
+Powiedz mi, czym jest Twój lokal i co ma robić strona: zbierać rezerwacje, zamówienia czy zapytania o imprezy. Wycenę dostaniesz w 24 godziny.
+
+</Cta>
